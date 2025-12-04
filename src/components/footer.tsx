@@ -1,7 +1,9 @@
 export function Footer() {
   return (
     <footer
-      id="resources"
+      id="contact"
+      role="contentinfo"
+      aria-label="Contact EZTECH and company information"
       className="relative py-10 px-6 overflow-hidden"
       style={{
         background: 'linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #334155 100%)',
@@ -38,53 +40,56 @@ export function Footer() {
                 Trying our Platform or Simply Learning More?
               </p>
 
-              <div className="mb-4">
-                {/*<p className="mb-3" style={{ color: '#94A3B8', fontSize: '1.125rem', lineHeight: '1.7' }}>Connect with us at:</p>*/}
-                
+              <address className="mb-4 not-italic">
                 {/* Email with icon */}
-                <div className="flex items-center gap-3 mb-3">
+                <a href="mailto:vandit@eztech.ai" className="flex items-center gap-3 mb-3 hover:opacity-80 transition-opacity" aria-label="Email EZTECH at vandit@eztech.ai">
                   <svg
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
                   >
                     <rect x="2" y="4" width="20" height="16" rx="2" stroke="#3A7BD5" strokeWidth="2" fill="none"/>
                     <path d="M2 7L12 13L22 7" stroke="#3A7BD5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <p className="text-lg font-medium" style={{ color: '#3A7BD5' }}>
+                  <span className="text-lg font-medium" style={{ color: '#3A7BD5' }}>
                     vandit@eztech.ai
-                  </p>
-                </div>
+                  </span>
+                </a>
 
                 {/* Mobile number */}
-                <div className="flex items-center gap-3">
+                <a href="tel:+61422925443" className="flex items-center gap-3 hover:opacity-80 transition-opacity" aria-label="Call EZTECH at +61 422925443">
                   <svg
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
                   >
                     <rect x="6" y="2" width="12" height="20" rx="2" stroke="#3A7BD5" strokeWidth="2" fill="none"/>
                     <line x1="6" y1="18" x2="18" y2="18" stroke="#3A7BD5" strokeWidth="2"/>
                     <circle cx="12" cy="20" r="0.5" fill="#3A7BD5" stroke="#3A7BD5" strokeWidth="1"/>
                   </svg>
-                  <p className="text-lg font-medium" style={{ color: '#3A7BD5' }}>
+                  <span className="text-lg font-medium" style={{ color: '#3A7BD5' }}>
                     +61 422925443
-                  </p>
-                </div>
-              </div>
+                  </span>
+                </a>
+              </address>
             </div>
 
             {/* Right Side: Logo */}
             <div className="flex items-center justify-center md:justify-end">
               <img
                 src="https://raw.githubusercontent.com/Vandit13S/ezchat-logo/main/Frame%2057.svg"
-                alt="EZTech Logo"
+                alt="EZTECH AI Systems - EZChat AI Assistant for CA Firms, Law Firms and Consulting Firms in India"
                 className="brightness-200"
                 style={{ width: '600px', height: '300px', objectFit: 'contain' }}
+                width="600"
+                height="300"
+                loading="lazy"
               />
             </div>
           </div>

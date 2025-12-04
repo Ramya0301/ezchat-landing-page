@@ -13,6 +13,7 @@ export function Navigation() {
 
   return (
     <nav
+      aria-label="Main navigation"
       className={`fixed top-0 z-50 w-full px-6 transition-all duration-300 ease-out lg:px-12 ${
         scrolled ? 'bg-white py-3 shadow-xl' : 'bg-white py-6 shadow-none'
       }`}
@@ -31,13 +32,16 @@ export function Navigation() {
 
 const Logo = ({ color = 'white' }: { color?: string }) => {
   return (
-    <a href="#" className="flex items-center gap-2">
+    <a href="#" className="flex items-center gap-2" aria-label="EZChat - Go to homepage" title="EZChat - AI Assistant for Professional Services Firms">
       <div className="h-8 md:h-10 flex items-center">
-        <img 
-          src="https://raw.githubusercontent.com/Vandit13S/ezchat-logo/main/Frame%2057.svg" 
-          alt="EZTech" 
+        <img
+          src="https://raw.githubusercontent.com/Vandit13S/ezchat-logo/main/Frame%2057.svg"
+          alt="EZTECH AI Systems - EZChat Logo - AI Assistant for Professional Services Firms in India"
           className="h-10 md:h-14 transition-transform"
           style={{ transform: 'scale(2.0)' }}
+          width="160"
+          height="56"
+          loading="eager"
         />
       </div>
     </a>
@@ -296,8 +300,8 @@ const MobileMenu = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="block lg:hidden">
-      <button onClick={() => setOpen(true)} className="block text-3xl" style={{ color: '#374151' }}>
-        <Menu />
+      <button onClick={() => setOpen(true)} className="block text-3xl" style={{ color: '#374151' }} aria-label="Open mobile menu" aria-expanded={open}>
+        <Menu aria-hidden="true" />
       </button>
       <AnimatePresence>
         {open && (
@@ -313,8 +317,8 @@ const MobileMenu = () => {
                 <span className="text-xl font-bold text-orange-600">EZTECH</span>
                 <span className="text-[10px] text-gray-600 -mt-1">AI for Professional Teams</span>
               </div>
-              <button onClick={() => setOpen(false)}>
-                <X className="text-3xl text-gray-900" />
+              <button onClick={() => setOpen(false)} aria-label="Close mobile menu">
+                <X className="text-3xl text-gray-900" aria-hidden="true" />
               </button>
             </div>
             <div className="h-screen overflow-y-scroll bg-gray-50 p-6">

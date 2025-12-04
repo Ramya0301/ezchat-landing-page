@@ -1,15 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>EZCHAT Landing Page Blueprint</title>
-    </head>
+    <!-- Primary Meta Tags -->
+    <title>EZChat - AI Assistant for Professional Services Firms | CA, Law & Consulting Firms in India</title>
+    <meta name="title" content="EZChat - AI Assistant for Professional Services Firms | CA, Law & Consulting Firms in India" />
+    <meta name="description" content="EZChat is an AI-powered assistant that gives your firm access to 10+ leading AI models (GPT-5, Claude, Gemini) securely trained on your knowledge base. Cut reporting time by 75%, scale to 3x more clients. Trusted by CA firms, law firms, and consulting firms across India." />
+    <meta name="keywords" content="AI assistant, professional services, CA firm software, law firm AI, consulting firm tools, knowledge management, GPT-5, Claude AI, Gemini AI, document automation, report generation, India, EZTECH, EZChat" />
+    <meta name="author" content="EZTECH AI Systems Pvt. Ltd." />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="general" />
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://eztech.ai/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eztech.ai/" />
+    <meta property="og:title" content="EZChat - AI Assistant for Professional Services Firms" />
+    <meta property="og:description" content="Access 10+ leading AI models securely trained on your firm's knowledge. Cut reporting time by 75% and scale to 3x more clients without hiring." />
+    <meta property="og:image" content="https://raw.githubusercontent.com/Vandit13S/ezchat-logo/main/Frame%2058.svg" />
+    <meta property="og:image:alt" content="EZChat AI Assistant Logo" />
+    <meta property="og:site_name" content="EZChat by EZTECH" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://eztech.ai/" />
+    <meta name="twitter:title" content="EZChat - AI Assistant for Professional Services Firms" />
+    <meta name="twitter:description" content="Access 10+ leading AI models securely trained on your firm's knowledge. Cut reporting time by 75% and scale to 3x more clients without hiring." />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Vandit13S/ezchat-logo/main/Frame%2058.svg" />
+    <meta name="twitter:image:alt" content="EZChat AI Assistant Logo" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#3A7BD5" />
+    <meta name="msapplication-TileColor" content="#3A7BD5" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/Vandit13S/ezchat-logo/main/Frame%2058.svg" />
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Vandit13S/ezchat-logo/main/Frame%2058.svg" />
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.simpleicons.org" />
+
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://raw.githubusercontent.com" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "EZChat",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "AI-powered assistant for professional services firms that provides access to 10+ leading AI models securely trained on your firm's knowledge base.",
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "479",
+        "highPrice": "1499",
+        "priceCurrency": "INR",
+        "offerCount": "3"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "100"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "EZTECH AI Systems Pvt. Ltd.",
+        "url": "https://eztech.ai",
+        "logo": "https://raw.githubusercontent.com/Vandit13S/ezchat-logo/main/Frame%2057.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "vandit@eztech.ai",
+          "telephone": "+61-422925443",
+          "contactType": "sales"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN"
+        }
+      }
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "EZTECH AI Systems Pvt. Ltd.",
+      "alternateName": "EZTECH",
+      "url": "https://eztech.ai",
+      "logo": "https://raw.githubusercontent.com/Vandit13S/ezchat-logo/main/Frame%2057.svg",
+      "description": "EZTECH provides AI-powered solutions for professional services firms in India including CA firms, law firms, and consulting firms.",
+      "foundingDate": "2024",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Vandit"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+61-422925443",
+          "contactType": "sales",
+          "email": "vandit@eztech.ai",
+          "availableLanguage": ["English", "Hindi"]
+        }
+      ],
+      "sameAs": [],
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What AI models does EZChat support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EZChat provides access to 10+ leading AI models including GPT-5, Claude 4.5, Gemini, Perplexity, Grok, and Meta AI, all in one unified platform."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is EZChat secure for professional services firms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, EZChat is SOC 2 compliant, uses SSL encryption, and is compliant with India's DPDP Act. Your firm's data remains secure and private."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does EZChat cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EZChat offers three plans: Beginner at ₹599/user/month, Pro at ₹999/user/month, and Ultra at ₹1,499/user/month. Annual billing saves 20%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can EZChat be trained on my firm's documents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, EZChat can be securely trained on your firm's past work, templates, and institutional knowledge, giving your team instant access to senior-level expertise."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- WebSite Schema for Search Box -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "EZChat",
+      "url": "https://eztech.ai",
+      "description": "AI Assistant for Professional Services Firms",
+      "publisher": {
+        "@type": "Organization",
+        "name": "EZTECH AI Systems Pvt. Ltd."
+      }
+    }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

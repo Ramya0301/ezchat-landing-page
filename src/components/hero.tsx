@@ -5,7 +5,11 @@ import { SpinningLogo } from './spinning-logo';
 
 export function Hero() {
   return (
-    <section className="relative min-h-[500px] md:min-h-[600px] bg-white overflow-hidden py-16 md:py-20">
+    <section
+      id="hero"
+      aria-label="EZChat AI Assistant for Professional Services Firms"
+      className="relative min-h-[500px] md:min-h-[600px] bg-white overflow-hidden py-16 md:py-20"
+    >
       <StaticBackground />
       <Copy />
     </section>
@@ -32,8 +36,8 @@ const Copy = () => {
           {/* Subheadline - Chunked Format */}
           <div className="max-w-3xl space-y-6 mb-8">
             {/* Chunk 1 */}
-            <div>
-              <h3 className="mb-2" style={{
+            <article>
+              <h2 className="mb-2" style={{
                 color: '#3A7BD5',
                 fontFamily: 'var(--font-body)',
                 fontWeight: 600,
@@ -41,15 +45,15 @@ const Copy = () => {
                 lineHeight: '1.4'
               }}>
                 Access 10+ Leading AI Models
-              </h3>
+              </h2>
               <p className="text-[#4B5563]" style={{ fontSize: '1.125rem', lineHeight: '1.7' }}>
                 EZChat brings together GPT-5, Claude-4.5, Gemini, and more <strong>SECURELY</strong> trained on <strong>YOUR</strong> firm's past work and expertise.
               </p>
-            </div>
+            </article>
 
             {/* Chunk 2 */}
-            <div>
-              <h3 className="mb-2" style={{
+            <article>
+              <h2 className="mb-2" style={{
                 color: '#3A7BD5',
                 fontFamily: 'var(--font-body)',
                 fontWeight: 600,
@@ -57,15 +61,15 @@ const Copy = () => {
                 lineHeight: '1.4'
               }}>
                 Junior Staff → Senior-Level Answers
-              </h3>
+              </h2>
               <p className="text-[#4B5563]" style={{ fontSize: '1.125rem', lineHeight: '1.7' }}>
                 Your team gets instant responses with citations to your firm's knowledge base. No more interrupting partners.
               </p>
-            </div>
+            </article>
 
             {/* Chunk 3 */}
-            <div>
-              <h3 className="mb-2" style={{
+            <article>
+              <h2 className="mb-2" style={{
                 color: '#3A7BD5',
                 fontFamily: 'var(--font-body)',
                 fontWeight: 600,
@@ -73,11 +77,11 @@ const Copy = () => {
                 lineHeight: '1.4'
               }}>
                 Scale Without Hiring
-              </h3>
+              </h2>
               <p className="text-[#4B5563]" style={{ fontSize: '1.125rem', lineHeight: '1.7' }}>
                 Generate reports in minutes, not hours. Serve 3x more clients with the same team size.
               </p>
-            </div>
+            </article>
           </div>
 
           {/* CTAs */}
@@ -104,10 +108,10 @@ const Copy = () => {
         </div>
 
         {/* EZChat Logo with Spinning Effect - Right Side */}
-        <div className="hidden md:flex items-center justify-center">
-          <SpinningLogo 
+        <div className="hidden md:flex items-center justify-center" aria-hidden="true">
+          <SpinningLogo
             logoSrc="https://raw.githubusercontent.com/Vandit13S/ezchat-logo/main/Frame%2058.svg"
-            logoAlt="EZChat"
+            logoAlt="EZChat AI Platform - Unified access to OpenAI, Claude, Gemini, Perplexity, Grok and Meta AI models"
           />
         </div>
       </div>

@@ -209,11 +209,11 @@ export function FAQSection() {
   ];
 
   return (
-    <section id="faqs" className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
+    <section id="faqs" aria-labelledby="faqs-heading" className="py-20 px-6" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="max-w-4xl mx-auto">
         {/* Headline */}
         <div className="text-center mb-12">
-          <h2 className="mb-4" style={{ color: '#2563EB', fontWeight: 'bold', fontSize: '2.3rem', textAlign: 'center' }}>Questions from Professional Firms Like Yours</h2>
+          <h2 id="faqs-heading" className="mb-4" style={{ color: '#2563EB', fontWeight: 'bold', fontSize: '2.3rem', textAlign: 'center' }}>Questions from Professional Firms Like Yours</h2>
         </div>
 
         {/* FAQ Accordion */}

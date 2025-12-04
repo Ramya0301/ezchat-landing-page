@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { AnimationProps, motion } from "motion/react";
+import React, { useEffect, useState } from "react";
+import { motion } from "motion/react";
 
 interface SpinningLogoProps {
   logoSrc: string;
@@ -156,33 +156,33 @@ const degreesToRadians = (degrees: number) => {
 
 const ICON_DATA = [
   {
-    url: "https://cdn.simpleicons.org/openai",
-    alt: "OpenAI",
+    url: "https://cdn.simpleicons.org/openai/000000",
+    alt: "OpenAI GPT AI model integration - Available in EZChat",
     className: "bg-white",
   },
   {
     url: "https://cdn.simpleicons.org/anthropic",
-    alt: "Claude",
+    alt: "Anthropic Claude AI model integration - Available in EZChat",
     className: "bg-white",
   },
   {
-    url: "https://cdn.simpleicons.org/googlegemini",
-    alt: "Gemini",
+    url: "https://cdn.simpleicons.org/googlegemini/4285F4",
+    alt: "Google Gemini AI model integration - Available in EZChat",
     className: "bg-white",
   },
   {
     url: "https://cdn.simpleicons.org/perplexity",
-    alt: "Perplexity",
+    alt: "Perplexity AI model integration - Available in EZChat",
     className: "bg-white",
   },
   {
     url: "https://cdn.simpleicons.org/x",
-    alt: "Grok",
+    alt: "Grok AI model integration - Available in EZChat",
     className: "bg-white",
   },
   {
     url: "https://cdn.simpleicons.org/meta",
-    alt: "Meta AI",
+    alt: "Meta AI model integration - Available in EZChat",
     className: "bg-white",
   },
 ];
@@ -218,9 +218,9 @@ const BREAKPOINTS = {
   md: 768,
 };
 
-const TRANSITION: AnimationProps["transition"] = {
+const TRANSITION = {
   repeat: Infinity,
-  repeatType: "loop",
+  repeatType: "loop" as const,
   duration: 50,
-  ease: "linear",
+  ease: "linear" as const,
 };

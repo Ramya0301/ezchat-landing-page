@@ -174,7 +174,7 @@ export function PricingSection() {
   const [selected, setSelected] = useState<"M" | "A">("M");
 
   return (
-    <section id="pricing" className="w-full text-black bg-[#F9FAFB] px-4 lg:px-8 py-12 lg:py-20 relative overflow-hidden">
+    <section id="pricing" aria-labelledby="pricing-heading" className="w-full text-black bg-[#F9FAFB] px-4 lg:px-8 py-12 lg:py-20 relative overflow-hidden">
       <Heading selected={selected} setSelected={setSelected} />
       <PriceCards selected={selected} />
       <TopLeftCircle />
@@ -195,7 +195,7 @@ interface HeadingProps {
 const Heading = ({ selected, setSelected }: HeadingProps) => {
   return (
     <div className="mb-12 lg:mb-24 relative z-10">
-      <h2 className="mb-4" style={{ color: '#2563EB', fontWeight: 'bold', fontSize: '2.5rem', textAlign: 'center' }}>
+      <h2 id="pricing-heading" className="mb-4" style={{ color: '#2563EB', fontWeight: 'bold', fontSize: '2.5rem', textAlign: 'center' }}>
                    Pricing That Scales with Your Firm
       </h2>
       <p className="text-center mx-auto max-w-lg mb-8 text-[#6B7280]">

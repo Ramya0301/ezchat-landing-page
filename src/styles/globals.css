@@ -391,3 +391,8 @@ html {
   background: linear-gradient(135deg, #3A7BD5 0%, #00BFFF 100%) !important;
   color: white !important;
 }
+
+/* Scroll behavior - offset handled by JavaScript in App.tsx */
+html {
+  scroll-behavior: smooth;
+}

@@ -96,11 +96,11 @@ export function FeaturesSection() {
   ];
 
   return (
-    <section id="features" className="py-12 px-6" style={{ backgroundColor: '#F9FAFB' }}>
+    <section id="features" aria-labelledby="features-heading" className="py-12 px-6" style={{ backgroundColor: '#F9FAFB' }}>
       <div className="max-w-7xl mx-auto">
         {/* Headlines */}
         <div className="text-center mb-12">
-          <h2 className="mb-4" style={{ color: '#2563EB', fontWeight: 'bold', fontSize: '2.5rem' }}>Everything Professional Firms Need in One Platform</h2>
+          <h2 id="features-heading" className="mb-4" style={{ color: '#2563EB', fontWeight: 'bold', fontSize: '2.5rem' }}>Everything Professional Firms Need in One Platform</h2>
           <p style={{ color: '#4B5563' }}>Not just another chat app - a complete AI productivity suite built for expert firms</p>
         </div>
 
