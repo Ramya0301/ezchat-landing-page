@@ -31,7 +31,7 @@ const InlineEmailForm = ({ planName, buttonText, bestFor }: { planName: string; 
     setError("");
 
     try {
-      const response = await fetch('http://localhost:5001/api/send-plan-interest', {
+      const response = await fetch('/api/send-plan-interest', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -22,8 +22,7 @@ export function FinalCTA() {
 
     try {
       // Call backend API to send email
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001';
-      const response = await fetch(`${apiUrl}/api/send-demo-request`, {
+      const response = await fetch('/api/send-demo-request', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

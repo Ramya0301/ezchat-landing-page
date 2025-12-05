@@ -97,10 +97,16 @@ export function EZDashIntro() {
               </div>
 
               {/* CTA */}
-              <Button className="bg-purple-gradient hover:opacity-90 text-white transition-opacity" size="lg">
-                Learn About EZDash
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
+              <a 
+                href="https://ezdash.in/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-purple-gradient hover:opacity-90 text-white transition-opacity" size="lg">
+                  Learn About EZDash
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </a>
 
               {/* Subtext */}
               <p className="text-sm text-gray-500 mt-4">

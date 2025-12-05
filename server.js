@@ -51,7 +51,7 @@ This is an automated message from the EZCHAT landing page.
 
   const mailOptions = {
     from: process.env.EMAIL_USER || 'vs.eztech@gmail.com',
-    to: 'vandit@eztech.ai',
+    to: 'vs.eztech@gmail.com',
     subject: `New Demo Request from ${name} - ${firm}`,
     text: emailBody,
     html: `
@@ -88,7 +88,7 @@ This is an automated message from the EZCHAT landing page.
 
   try {
     await transporter.sendMail(mailOptions);
-    console.log('Email sent successfully to vandit@eztech.ai');
+    console.log('Email sent successfully to vs.eztech@gmail.com');
     res.json({ 
       success: true, 
       message: 'Email sent successfully' 
