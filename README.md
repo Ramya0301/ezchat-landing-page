@@ -30,12 +30,12 @@
 
   ## Email Configuration (Demo Form)
 
-  The demo booking form sends emails to `vandit@eztech.ai` using Gmail SMTP. The backend server (`server.js`) handles email sending.
+  The demo booking form sends emails to `` using Gmail SMTP. The backend server (`server.js`) handles email sending.
 
   ### Gmail SMTP Setup
 
   1. **Gmail Account Setup:**
-     - Use the Gmail account: `vs.eztech@gmail.com`
+     - Use the Gmail account: ``
      - Enable 2-Factor Authentication on your Google Account
      - Generate an App Password:
        - Go to Google Account → Security → 2-Step Verification → App Passwords
@@ -45,12 +45,12 @@
   2. **Environment Variables:**
      Create a `.env` file in the root directory:
      ```
-     EMAIL_USER=vs.eztech@gmail.com
-     EMAIL_PASSWORD=zkaqohebegawujhb
+     EMAIL_USER=''
+     EMAIL_PASSWORD=
      PORT=5001
      ```
      
-     **Note:** The password `zkaqohebegawujhb` is already configured as an App Password.
+     **Note:** The password `` is already configured as an App Password.
 
   3. **Frontend Configuration (optional):**
      If your backend runs on a different port or domain, add to `.env`:
@@ -63,7 +63,7 @@
   - **Frontend** (React/Vite): Runs on `http://localhost:5173`
   - **Backend** (Express/Node.js): Runs on `http://localhost:5001`
   - When a user submits the demo form, the frontend sends data to the backend API
-  - The backend uses Gmail SMTP to send a formatted email to `vandit@eztech.ai`
+  - The backend uses Gmail SMTP to send a formatted email to ``
   - The user sees a success message after the email is sent
 
   ### Troubleshooting

@@ -30,7 +30,7 @@ export default async function handler(req, res) {
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: 'vs.eztech@gmail.com',
+    to: process.env.EMAIL_USER,
     subject: `Request for ${planName} Free Trial`,
     text: `New free trial request:\n\nPlan: ${planName}\nUser Email: ${email}\n\n---\nThis is an automated message from the EZCHAT landing page.`,
     html: `

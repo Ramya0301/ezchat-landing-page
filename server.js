@@ -19,8 +19,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: process.env.EMAIL_USER || 'vs.eztech@gmail.com',
-    pass: process.env.EMAIL_PASSWORD || 'zkaqohebegawujhb',
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD,
   },
 });
 
@@ -50,8 +50,8 @@ This is an automated message from the EZCHAT landing page.
   `.trim();
 
   const mailOptions = {
-    from: process.env.EMAIL_USER || 'vs.eztech@gmail.com',
-    to: 'vs.eztech@gmail.com',
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_USER,
     subject: `New Demo Request from ${name} - ${firm}`,
     text: emailBody,
     html: `
@@ -116,8 +116,8 @@ app.post('/api/send-plan-interest', async (req, res) => {
   }
 
   const mailOptions = {
-    from: process.env.EMAIL_USER || 'vs.eztech@gmail.com',
-    to: 'vs.eztech@gmail.com',
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_USER,
     subject: `Request for ${planName} Free Trial`,
     text: `New free trial request:\n\nPlan: ${planName}\nUser Email: ${email}\n\n---\nThis is an automated message from the EZCHAT landing page.`,
     html: `
