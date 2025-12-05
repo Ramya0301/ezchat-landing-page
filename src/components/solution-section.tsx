@@ -5,7 +5,7 @@ import { ArrowDown, ArrowUp } from "lucide-react";
 const items = [
   {
     id: 1,
-    icon: "📚",
+    icon: "/KB_icon.jpeg",
     title: "Build Your Firm's Knowledge Base",
     description:
       "Upload your firm's past work — tax opinions, advisory notes, research memos, SOPs, templates, regulations. EZChat indexes everything and makes it instantly searchable. Your firm's collective expertise, organized and accessible in one place.",
@@ -13,7 +13,7 @@ const items = [
   },
   {
     id: 2,
-    icon: "🤖",
+    icon: "/AI_icon.jpg",
     title: "Access 10+ AI Models in One Platform",
     description: (
       <>
@@ -24,19 +24,19 @@ const items = [
         Compare responses side-by-side. Use different models for different tasks. Always get the most accurate, up-to-date AI capabilities without managing multiple subscriptions.
       </>
     ),
-    img: "/AI-Logos.jpg",
+    img: "/AI_Logos_2.png",
   },
   {
     id: 3,
-    icon: "💬",
+    icon: "/citation-icon.jpg",
     title: "Ask Questions, Get Answers with Citations",
     description:
       "Your team asks questions in plain English: \"What's our position on [tax issue]?\" or \"Find similar cases we've handled.\" EZChat answers instantly using your uploaded knowledge, complete with citations to specific documents and sections. Junior staff get senior - level guidance in seconds.",
-    img: "/citations.jpeg",
+    img: "/citations_2.jpeg",
   },
   {
     id: 4,
-    icon: "📊",
+    icon: "/analysis_icon.png",
     title: "Generate Reports & Analyze Data Automatically",
     description:
       "Upload client data and ask: \"Generate monthly analysis report\" or \"Summarize compliance status\" or \"Create executive presentation.\" EZChat produces formatted deliverables - reports, decks, summaries - in 15 minutes instead of 10 hours. With charts, visualizations, and professional formatting.",
@@ -44,7 +44,7 @@ const items = [
   },
   {
     id: 5,
-    icon: "👥",
+    icon: "/expert_team_icon.jpeg",
     title: "Scale Your Expertise Across the Team",
     description:
       "Every team member now has instant access to your firm's best thinking. Junior staff perform at senior level. Partners focus on strategy, not routine questions. Take on 3x more clients with the same team size.",
@@ -58,20 +58,22 @@ const Content = ({ content }: { content: typeof items }) => {
       {content.map(({ id, title, description, icon }, idx) => (
         <div
           key={id}
-          className="p-8 h-[50vh] flex flex-col snap-start snap-always"
+          className="p-8 h-[50vh] flex flex-col justify-center snap-start snap-always"
           style={{
-            backgroundColor: idx % 2 ? '#FFFFFF' : '#1F2937',
-            color: idx % 2 ? '#1F2937' : '#FFFFFF'
+            backgroundColor: id === 2 || id === 4 ? '#1F2937' : '#FFFFFF',
+            color: id === 2 || id === 4 ? '#FFFFFF' : '#1F2937'
           }}
         >
           <div>
-            {id !== 2 && <div className="text-5xl mb-4">{icon}</div>}
+            <div className="mb-4">
+              <img src={icon} alt={title} className={`w-16 h-16 object-contain ${id === 3 || id === 5 ? 'rounded-xl' : 'rounded-full'}`} style={{ backgroundColor: 'transparent' }} />
+            </div>
             <h3 
               className="text-3xl font-medium mb-4" 
               style={
-                id === 2 || id === 4
+                id === 1 || id === 3 || id === 5
                   ? { color: '#3B82F6', fontWeight: 'bold' } 
-                  : id === 1 || id === 3 || id === 5
+                  : id === 2 || id === 4
                   ? { color: '#FFFFFF', fontWeight: 'bold' }
                   : {}
               }
@@ -79,7 +81,7 @@ const Content = ({ content }: { content: typeof items }) => {
               {title}
             </h3>
           </div>
-          <div className="font-light w-full max-w-md" style={{ color: idx % 2 ? '#4B5563' : '#D1D5DB' }}>{description}</div>
+          <div className="font-light w-full max-w-md text-lg" style={{ color: id === 2 || id === 4 ? '#D1D5DB' : '#4B5563', textAlign: 'justify' }}>{description}</div>
         </div>
       ))}
     </div>

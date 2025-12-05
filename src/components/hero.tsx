@@ -1,6 +1,7 @@
+import React from 'react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
-import { Zap, Play } from 'lucide-react';
+import { Zap } from 'lucide-react';
 import { SpinningLogo } from './spinning-logo';
 
 export function Hero() {
@@ -94,10 +95,6 @@ const Copy = () => {
               <a href="https://chat.eztech.ai" target="_blank" rel="noopener noreferrer">
                 See How It Works →
               </a>
-            </Button>
-            <Button size="lg" variant="outline" className="border-2 border-[#3A7BD5] text-[#3A7BD5] hover:bg-[#3A7BD5] hover:text-white">
-              <Play className="w-4 h-4 mr-2" />
-              Watch 2-Min Demo ▶
             </Button>
           </div>
 
